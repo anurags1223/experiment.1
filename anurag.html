@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Fees</title>
+</head>
+<body style="text-align: center;"></body>
+
+    <h1>Bank Fee Portal</h1>
+    
+    <h2>List of Fees</h2>
+    
+    <p>Monthly Fee: $10</p>
+    <p>ATM Fee: $3</p>
+    <p>Transfer Fee: $5</p>
+    
+    <hr>
+    
+    <h2>Calculate Fee</h2>
+    
+    <p>Enter amount: <input type="number" id="amount"></p>
+    
+    <button onclick="calculate()">Calculate</button>
+    
+    <p id="result"></p>
+    
+    <script>
+        function calculate() {
+            var num = document.getElementById("amount").value;
+            var total = num * 2;
+            document.getElementById("result").innerHTML = "Total: $" + total;
+        }
+    </script>
+
+</body>
+</html>
